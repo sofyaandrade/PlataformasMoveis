@@ -5,7 +5,7 @@ Projeto desenvolvido como atividade da disciplina de Desenvolvimento de Platafor
 ---
 
 ## Objetivo
-Implementar um website responsivo que simula um catálogo de livros, utilizando HHTML + CSS (Flexbox) e boas práticas de responsividade, além de aplicar um manifesto para PWA.
+Implementar um website responsivo que simula um site de viagens, utilizando HHTML + CSS (Flexbox) e boas práticas de responsividade, além de aplicar um manifesto para PWA.
 
 ---
 
@@ -13,7 +13,7 @@ Implementar um website responsivo que simula um catálogo de livros, utilizando 
 O layout segue a proposta de catálogo com:
 - Banner de destaque
 - Menu de navegação
-- Cards de livros em Flexbox
+- Cads com as propostas de viagens
 - Rodapé com informações de contato
 - Menu Colapsado no mobile
 
@@ -32,4 +32,4 @@ O layout segue a proposta de catálogo com:
 - PWA (manifest.json)
 
 ## Imagens
-- As imagens utilizadas na atividade vem do site PIXABAY e como forma de registro o nome dos autores foi preenchido com o usuário do criador de cada imagem.
+- As imagens utilizadas na atividade vem do site PIXABAY.

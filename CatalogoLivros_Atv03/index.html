@@ -3,90 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Livros</title>
+  <title>Agência Viagens Mundo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
-    <div class="logo">📚 Catálogo de Livros</div>
+    <div class="logo">🌍 Mundo Viagens</div>
     <nav>
       <ul class="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Livros</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
       <div class="hamburger">☰</div>
     </nav>
   </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <h1>Descubra novos mundos através da leitura</h1>
+  <section class="banner" id="inicio">
+    <h1>Explore o mundo com a gente</h1>
+    <p>Pacotes de viagens nacionais e internacionais</p>
   </section>
 
-  <!-- Catálogo -->
-  <main class="catalogo">
-    <div class="card">
-      <img src="img/livro1.jpg" alt="Livro 1">
-      <h3>Livro Infantil</h3>
-      <p>Autor: Flutie8211</p>
+  <section class="sobre" id="sobre">
+    <img src="img/img1.jpg" alt="Sobre nós">
+    <div>
+      <h2>Sobre Nós</h2>
+      <p>
+        A <b>Mundo Viagens</b> é especializada em criar experiências inesquecíveis. 
+        Conectamos você aos melhores destinos, cuidando de cada detalhe da sua viagem.
+      </p>
     </div>
-    <div class="card">
-      <img src="img/livro2.jpg" alt="Livro 2">
-      <h3>Romance Clássico</h3>
-      <p>Autor: Betidraws</p>
-    </div>
-    <div class="card">
-      <img src="img/livro3.jpg" alt="Livro 3">
-      <h3>Desvendando o Mundo</h3>
-      <p>Autor: BiancaVanDijk</p>
-    </div>
-    <div class="card">
-      <img src="img/livro4.jpg" alt="Livro 4">
-      <h3>Natureza Moderna</h3>
-      <p>Autor: Betidraws</p>
-    </div>
-    <div class="card">
-      <img src="img/livro5.jpg" alt="Livro 5">
-      <h3>Ficção Científica</h3>
-      <p>Autor: Tiemcuala12</p>
-    </div>
-    <div class="card">
-      <img src="img/livro6.jpg" alt="Livro 6">
-      <h3>Fantasia Épica</h3>
-      <p>Autor: Hey-Juda</p>
-    </div>
-    <div class="card">
-      <img src="img/livro7.jpg" alt="Livro 6">
-      <h3>Historias Do Mundo</h3>
-      <p>Autor: Flutie8211</p>
-    </div>
-    <div class="card">
-      <img src="img/livro8.jpg" alt="Livro 6">
-      <h3>Sobre as Plantas</h3>
-      <p>Autor: Pfefferminza_Viktualia</p>
-    </div>
-    <div class="card">
-      <img src="img/livro9.jpg" alt="Livro 6">
-      <h3>Descobrindo o Universo</h3>
-      <p>Autor: RosZie</p>
-    </div>
-    <div class="card">
-      <img src="img/livro10.jpg" alt="Livro 6">
-      <h3>Autoconhecimento</h3>
-      <p>Autor: Andsproject</p>
-    </div>
-  </main>
+  </section>
 
-  <!-- Rodapé -->
+  <section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/servico1.jpg" alt="Serviço 1">
+        <h3>Pacotes Nacionais</h3>
+        <p>Descubra o Brasil com conforto e praticidade.</p>
+      </div>
+      <div class="card">
+        <img src="img/servico2.jpg" alt="Serviço 2">
+        <h3>Viagens Internacionais</h3>
+        <p>Explore novos países e culturas ao redor do mundo.</p>
+      </div>
+      <div class="card">
+        <img src="img/servico3.jpg" alt="Serviço 3">
+        <h3>Hospedagem e Guias</h3>
+        <p>Pacotes completos com hotéis e passeios guiados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Entre em Contato</h2>
+    <p>📧 contato@mundoviagens.com | 📞 (99) 9999-9999</p>
+  </section>
+
   <footer>
-    <p>📖 Catálogo de Livros | Contato: (xx) xxxx-xxxx | sofya.andrade@unidavi.edu.br</p>
+    <p>🌍 Mundo Viagens - Todos os direitos reservados</p>
   </footer>
 
   <script>
-    // Script do menu hambúrguer
     const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector('.menu');
     hamburger.addEventListener('click', () => {

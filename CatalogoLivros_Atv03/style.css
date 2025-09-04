@@ -1,28 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  line-height: 1.6;
   color: #333;
+  background: #f9f9f9;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  background: #222;
+  padding: 15px 20px;
+  background: #0066cc;
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
+.logo { font-size: 1.3rem; font-weight: bold; }
 
 nav ul {
   display: flex;
@@ -30,36 +29,58 @@ nav ul {
   gap: 20px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
+nav a { color: #fff; text-decoration: none; font-weight: bold; }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
+.hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+section {
+  min-height: 100vh;
+  padding-top: 80px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .banner {
-  background: url("img/banner.jpg") no-repeat center center/cover;
-  height: 200px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("img/banner.jpg") no-repeat center center/cover;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-shadow: 2px 2px 5px black;
   text-align: center;
-  padding: 10px;
 }
 
-/* Catálogo (usando Flexbox) */
-.catalogo {
+.sobre {
+  background: #fff;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px;
+}
+
+.sobre img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.servicos {
+  background: #e6f2ff;
+  text-align: center;
+  padding: 40px;
+}
+
+.servicos h2 { margin-bottom: 20px; }
+
+.cards {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
 }
 
 .card {
@@ -67,21 +88,27 @@ nav a {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  text-align: center;
   flex: 1 1 250px;
   max-width: 300px;
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-footer {
-  background: #222;
+.contato {
+  background: #004080;
   color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+footer {
+  background: #00264d;
+  color: #fff;
   text-align: center;
   padding: 15px;
 }
@@ -90,19 +117,15 @@ footer {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #333;
+    background: #004080;
     position: absolute;
     top: 60px;
     right: 0;
     width: 200px;
     padding: 10px;
   }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
+  nav ul.active { display: flex; }
+  .hamburger { display: block; }
+  .sobre { flex-direction: column; }
+  .sobre img { width: 100%; }
 }
