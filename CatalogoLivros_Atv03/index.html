@@ -73,6 +73,14 @@
     hamburger.addEventListener('click', () => {
       menu.classList.toggle('active');
     });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service_worker.js')
+          .then(reg => console.log('Service Worker registrado', reg))
+          .catch(err => console.log('Falha ao registrar Service Worker', err));
+      });
+    }
   </script>
 </body>
 </html>
